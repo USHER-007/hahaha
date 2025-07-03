@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .navbar{
+            background-color: rgb(39 47 15);
+            margin: 22px 0;
+            /* border: 3px solid rgb(27, 21, 21); */
+            border-radius: 33px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            padding: 3px 13px;
+        }
+        .navbar li a{
+            color: rgb(172, 224, 165);
+            padding: 3px 13px;
+            font-family:cursive;
+        }
+        .navbar li a:hover{
+            color: red;
+        }
+        .container{
+            border: 3px solid rgb(0, 0, 0);
+            background-color: rgb(233, 228, 187);
+            width: 700px;
+            margin: auto;
+            
+        }
+        .item{
+            border: 3px solid rgb(253, 72, 0);
+            background-color: rgb(212, 221, 179);
+            font-family:cursive;
+            padding: 24px;
+            margin: 33px;
+            border-radius: 22px;
+        }
+        #fruits{
+            float: left;
+            width: 32%;
+        }
+        #drinks{
+            float: right;
+            width: 33%;
+        }
+        #bakery{
+            clear: both;
+            width: auto;
+        }
+        h2{
+            text-align: center;
+            font-family: cursive;
+            /* width: 300px; */
+        }
+
+
+        .btn{
+            font-family:cursive;
+            font-size: 18px;
+            border-radius: 3px;
+            margin: 10px;
+            background-color: rgb(233, 228, 187);
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            font-weight: bold;
+            /* background-color: rgb(109, 152, 247); */
+        }
+        .btn:hover{
+            color: rgb(250, 53, 53);
+            background-color: rgb(185, 196, 147);
+            border: radius 3px; ;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            /* color: rgb(183, 187, 150); */
+            border-radius: 4px;
+        }
+        button{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="#">Mail</a></li>
+            </ul>
+        </nav>
+        
+        <h2>My Store</h2>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto nesciunt nihil omnis magni odit numquam adipisci ad expedita animi. Perferendis odit tenetur modi corrupti? Provident sequi voluptatum alias in magnam rerum nesciunt.</p>
+        </div>
+        <div id="drinks" class="item">
+            <h3>Drinks</h3>
+            <p id="drinkspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto nesciunt nihil omnis magni odit numquam adipisci ad expedita animi. Perferendis odit tenetur modi corrupti? Provident sequi voluptatum alias in magnam rerum nesciunt.</p>
+        </div>
+        <div id="bakery" class="item">
+            <h3>Bakery</h3>
+            <p id="bakerypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto nesciunt nihil omnis magni odit numquam adipisci ad expedita animi. Perferendis odit tenetur modi corrupti? Provident sequi voluptatum alias in magnam rerum nesciunt.</p>
+        </div>        
+        <a href="" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+
+    </div>
+</body>
+</html>
